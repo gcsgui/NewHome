@@ -132,17 +132,12 @@
 
   <!-- RSVP -->
   <section id="rsvp" class="section section--dark">
-    <p class="eyebrow eyebrow--light">Confirmação</p>
     <h2 class="section__title section__title--light">Nos avise se estará conosco.</h2>
 
     <form id="rsvp-form" class="form" novalidate>
       <div class="field">
         <label for="nome">Nome completo</label>
         <input id="nome" name="nome" type="text" required autocomplete="name" />
-      </div>
-      <div class="field">
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" required autocomplete="email" />
       </div>
       <div class="field field--row">
         <div>
@@ -156,10 +151,6 @@
             <option value="nao">Infelizmente não poderei</option>
           </select>
         </div>
-      </div>
-      <div class="field">
-        <label for="mensagem">Mensagem (opcional)</label>
-        <textarea id="mensagem" name="mensagem" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn--ghost">Enviar confirmação</button>
       <p class="form__status" id="form-status" role="status"></p>

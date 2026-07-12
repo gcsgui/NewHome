@@ -142,10 +142,6 @@
       status.textContent = "Por favor, informe seu nome completo.";
       return;
     }
-    if (!/^[^@]+@[^@]+\.[^@]+$/.test(data.email)) {
-      status.textContent = "Informe um e-mail válido.";
-      return;
-    }
 
     // Persistência local (sem backend)
     const rsvps = JSON.parse(localStorage.getItem("rsvps") || "[]");
