@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Convite minimalista para o nosso Chá de Casa Nova." />
+  <title>Chá de Casa Nova — Convite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand">E&amp;G</a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#home">Convite</a>
+      <a href="#filosofia">Filosofia</a>
+      <a href="#presentes">Presentes</a>
+      <a href="#rsvp">Presença</a>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Chá de Casa Nova</p>
+      <p class="eyebrow">Eduarda & Guilherme</p>
+      <h1 class="hero__title">
+        Uma <em>nova</em> morada,<br />
+        os mesmos <span class="steel">Afetos</span>.
+      </h1>
+      <p class="hero__lede">
+        É com serenidade que abrimos as portas da nossa casa para receber
+        aqueles que queremos que continuem fazendo parte da nossa história.
+      </p>
+
+      <div class="meta">
+        <div class="meta__item">
+          <span class="meta__label">Data</span>
+          <span class="meta__value">02 de Agosto</span>
+        </div>
+        <div class="meta__divider" aria-hidden="true"></div>
+        <div class="meta__item">
+          <span class="meta__label">Hora</span>
+          <span class="meta__value">14h</span>
+        </div>
+        <div class="meta__divider" aria-hidden="true"></div>
+        <div class="meta__item">
+          <span class="meta__label">Local</span>
+          <span class="meta__value">Rua Cairu, 1721 Fátima - Canoas</span>
+        </div>
+      </div>
+
+      <a href="#rsvp" class="btn btn--primary">Confirmar presença</a>
+    </div>
+    <div class="hero__rule" aria-hidden="true"></div>
+  </section>
+
+  <!-- FILOSOFIA -->
+  <section id="filosofia" class="section section--tight">
+    <p class="eyebrow">Nossa filosofia</p>
+    <h2 class="section__title">O que <em>não</em> combina conosco.</h2>
+    <div class="prose">
+      <p>
+        Quem nos conhece sabe: prezamos pelo silêncio visual, pela materialidade
+        honesta e por objetos que envelhecem com dignidade. A nova casa foi
+        pensada em uma paleta rigorosa — cinzas, preto absoluto e o brilho
+        contido do aço escovado.
+      </p>
+      <div class="philosophy-palette" aria-label="Paleta de cores aceitáveis">
+        <p class="philosophy-palette__label">Tonalidades aceitas</p>
+        <div class="philosophy-palette__row">
+          <div class="philosophy-palette__item">
+            <span class="philosophy-palette__line" style="--swatch-color: #131313"></span>
+            <small>Night</small>
+          </div>
+          <div class="philosophy-palette__item">
+            <span class="philosophy-palette__line" style="--swatch-color: #3c3c3c"></span>
+            <small>Onyx</small>
+          </div>
+          <div class="philosophy-palette__item">
+            <span class="philosophy-palette__line" style="--swatch-color: #646464"></span>
+            <small>Dim Gray</small>
+          </div>
+          <div class="philosophy-palette__item">
+            <span class="philosophy-palette__line" style="--swatch-color: #b5b5b5"></span>
+            <small>Silver</small>
+            </div>
+            <div class="philosophy-palette__item">
+            <span class="philosophy-palette__line" style="--swatch-color: #f3f3f3"></span>
+            <small>Off-White</small>
+          </div>
+        </div>
+      </div>
+      <p>
+        Por isso, com carinho, pedimos que evitem:
+      </p>
+      <ul class="antilist">
+        <li>Itens fora da paleta (cores vibrantes, tons quentes, pasteis).</li>
+        <li>Objetos excessivamente chamativos ou decorativos em excesso.</li>
+        <li>Estampas coloridas, florais ou temáticas.</li>
+        <li>Utensílios que quebrem a harmonia estética da casa.</li>
+      </ul>
+      <p class="prose__foot">
+        Menos, sempre, é mais. Obrigado por respeitarem o nosso gosto.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRESENTES -->
+  <section id="presentes" class="section">
+    <p class="eyebrow">Lista de presentes</p>
+    <h2 class="section__title">Itens que gostaríamos</h2>
+    <p>
+        Fique a vontade para escolher um item abaixo ou nos presentear com algo a sua escolha que respeite a paleta de cores.
+    </p>
+
+    <div class="tabs" role="tablist" aria-label="Categorias de presentes">
+      <button class="tab is-active" role="tab" data-tab="eletros">Eletros</button>
+      <button class="tab" role="tab" data-tab="cozinha">Cozinha</button>
+      <button class="tab" role="tab" data-tab="cama">Cama, Mesa &amp; Banho</button>
+      <button class="tab" role="tab" data-tab="decor">Organização &amp; Décor</button>
+    </div>
+
+    <div class="grid" id="gift-grid" aria-live="polite"></div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="section section--dark">
+    <p class="eyebrow eyebrow--light">Confirmação</p>
+    <h2 class="section__title section__title--light">Nos avise se estará conosco.</h2>
+
+    <form id="rsvp-form" class="form" novalidate>
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required autocomplete="email" />
+      </div>
+      <div class="field field--row">
+        <div>
+          <label for="acompanhantes">Acompanhantes</label>
+          <input id="acompanhantes" name="acompanhantes" type="number" min="0" max="5" value="0" />
+        </div>
+        <div>
+          <label for="presenca">Comparecerá?</label>
+          <select id="presenca" name="presenca" required>
+            <option value="sim">Sim, estarei presente</option>
+            <option value="nao">Infelizmente não poderei</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem (opcional)</label>
+        <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn--ghost">Enviar confirmação</button>
+      <p class="form__status" id="form-status" role="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Com afeto, <span class="steel">Eduarda &amp; Guilherme</span></p>
+    <p class="footer__small">Um encontro sóbrio. Uma nova casa.</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" data-close aria-label="Fechar">×</button>
+      <p class="eyebrow" id="modal-eyebrow">Presente</p>
+      <h3 class="modal__title" id="modal-title">—</h3>
+      <p class="modal__desc" id="modal-desc">—</p>
+      <div class="modal__actions">
+        <button class="btn btn--primary" id="modal-confirm">Escolher este presente</button>
+        <button class="btn btn--link" data-close>Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./gifts-data.js"></script>
+  <script src="./reservas.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
